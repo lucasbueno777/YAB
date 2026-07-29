@@ -55,7 +55,7 @@ const products = [
 
             image:"anelfalanger.png",
 
-            stock:false
+            stock:true
         },
 
         {
@@ -320,7 +320,7 @@ const products = [
 
             image:"argolatorc1.png",
 
-            stock:true
+            stock:false
         },
 
 
@@ -358,7 +358,7 @@ const products = [
 
             image:"brincogota1.png",
 
-            stock:true
+            stock:false
         },
 
 
