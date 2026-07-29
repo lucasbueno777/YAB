@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YAB</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6d2ea823d0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <h1>YAB</h1>
+
+        <p>Catálogo 2026</p>
+
+    </div>
+
+    <div class="search">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Pesquisar produtos..."
+        >
+
+    </div>
+
+    <div class="cart-button">
+
+        <button id="openCart">
+
+            <h3>🛒</h3>
+
+            <span id="cartCount">0</span>
+
+        </button>
+
+    </div>
+
+</header>
+
+<nav>
+
+    <button class="filter active" data-category="Todos">
+        Todos
+    </button>
+
+    <button class="filter" data-category="Brincos">
+        Brincos
+    </button>
+
+    <button class="filter" data-category="Colares">
+        Colares
+    </button>
+
+    <button class="filter" data-category="Anéis">
+        Anéis
+    </button>
+
+    <button class="filter" data-category="Pulseiras">
+        Pulseiras
+    </button>
+
+</nav>
+
+<main>
+
+    <section
+        id="products"
+        class="products">
+    </section>
+
+</main>
+
+<div
+    class="cart"
+    id="cart">
+
+    <div class="cart-header">
+
+        <h2>
+            Meu Carrinho
+        </h2>
+
+        <button id="closeCart">
+            ×
+        </button>
+
+    </div>
+
+    <div id="cartItems">
+
+    </div>
+
+    <div class="cart-footer">
+
+        <h3>
+
+            Total
+
+            <span id="cartTotal">
+
+                R$0,00
+
+            </span>
+
+        </h3>
+
+        <button id="finish">
+
+            Finalizar Pedido
+
+        </button>
+
+    </div>
+
+</div>
+
+<div id="overlay"></div>
+
+<template id="product-template">
+
+    <div class="card">
+
+        <div class="image">
+
+            <img src="" alt="">
+
+            <span class="badge"></span>
+
+        </div>
+
+        <div class="info">
+
+            <h3></h3>
+
+            <p class="price"></p>
+
+            <p class="status"></p>
+
+            <button class="buy">
+
+                Adicionar ao Carrinho
+
+            </button>
+
+        </div>
+
+    </div>
+
+</template>
+
+<script src="products.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
